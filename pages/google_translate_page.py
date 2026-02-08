@@ -34,6 +34,6 @@ class GoogleTranslatePage:
                 return True
             except:
                 self.driver.execute_script("arguments[0].click();", btn)
-                print("Processing ...")
+                print("Processing...")
                 if count == 10:
                     return False
