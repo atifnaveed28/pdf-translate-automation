@@ -26,7 +26,7 @@ def test_translate_docs():
         log_message(LOG_FILE, f"{name} ✅ Error File > 10 mb")
 
     # Start browser
-    with SB(headless=True) as sb:
+    with SB(headless=False) as sb:
         sb.maximize_window()
         page = GoogleTranslatePage(sb)
 
